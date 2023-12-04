@@ -295,7 +295,7 @@ $num = ($toY - 2016);
 					<li>パララックスやCSSアニメーションで動きをつける</li>
 					<li>完全オリジナルのWordPressテーマを作成</li>
 					<li>XD・Figmaなどのデザインを元に構築</li>
-					<li>GitHubでのデータ共有（Sourcetree使用）</li>
+					<li>GitHubでのデータ共有</li>
 				</ul>
 			</div>
 			<div class="b2col fadein fade2 single01">
