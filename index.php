@@ -333,7 +333,7 @@ $num = ($toY - 2016);
 </article>
 <footer>
 	<div class="case">
-		<p class="fs80 tac mt15">© 2024 Front-end Engineer A</p>
+		<p class="fs80 tac mt15">© 2023 Front-end Engineer A</p>
 	</div>
 	<div class="pagetop"><a href="#"><img src="images/common/pagetop.png" alt="ページトップへ"></a></div>
 </footer>
