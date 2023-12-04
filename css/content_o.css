@@ -1,0 +1,153 @@
+/* --------------------------------------------------
+	Base Layout
+-------------------------------------------------- */
+/* Grouping content */
+@charset "utf-8";
+* { margin: 0; padding: 0; vertical-align: baseline; }
+p, blockquote, dl, dd, figure { margin: 0; }
+hr {
+	color: inherit;
+	height: auto;
+	-moz-box-sizing: content-box;
+		box-sizing: content-box;
+}
+ol, ul { padding: 0; margin: 0; }
+li { list-style: none; }
+a { word-wrap: break-word; word-break: break-word; outline: none; }
+a:link, a:visited { color: #333; text-decoration: none; }
+a:hover { opacity: 0.8; }
+table { border-collapse: collapse; }
+
+/**
+ * 8.0 - Alignments
+ */
+
+p img { height: auto !important; }
+.wp-caption {
+	max-width: 100%;
+	line-height: 0;
+}
+.wp-caption p {
+	line-height: 1.6;
+	font-size: 0.9rem;
+}
+
+.alignleft {
+	float: left;
+	margin: 0.375em 1.75em 1.75em 0;
+}
+.alignright {
+	float: right;
+	margin: 0.375em 0 1.75em 1.75em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto 1.75em;
+}
+
+/* ------- PC・SP共通　----------------------------------- */
+.tal { text-align: left; }
+.tar { text-align: right; }
+.tac { text-align: center; }
+.taj { text-align: justify; }
+
+.fl { float: left; }
+.fr { float: right; }
+.cb { clear: both; }
+
+.mt0 { margin-top: 0 !important; }
+.mt01 { margin-top: 1px; }
+.mt02 { margin-top: 2px; }
+.mt03 { margin-top: 3px; }
+.mt04 { margin-top: 4px; }
+.mt05 { margin-top: 5px; }
+.mt06 { margin-top: 6px; }
+.mt07 { margin-top: 7px; }
+.mt08 { margin-top: 8px; }
+.mt09 { margin-top: 9px; }
+
+.mb01 { margin-bottom: 1px; }
+.mb02 { margin-bottom: 2px; }
+.mb03 { margin-bottom: 3px; }
+.mb04 { margin-bottom: 4px; }
+.mb05 { margin-bottom: 5px; }
+.mb06 { margin-bottom: 6px; }
+.mb07 { margin-bottom: 7px; }
+.mb08 { margin-bottom: 8px; }
+.mb09 { margin-bottom: 9px; }
+
+/* ------- pcSite　----------------------------------- */
+@media screen and (min-width:768px) { /* PC */
+.pctac { text-align: center; }
+
+.mt10 { margin-top: 10px; }
+.mt15 { margin-top: 15px; }
+.mt20 { margin-top: 20px; }
+.mt25 { margin-top: 25px; }
+.mt30 { margin-top: 30px; }
+.mt40 { margin-top: 40px; }
+.mt50 { margin-top: 50px; }
+.mt60 { margin-top: 60px; }
+.mt70 { margin-top: 70px; }
+.mt80 { margin-top: 80px; }
+.mt90 { margin-top: 90px; }
+.mt100 { margin-top: 100px; }
+.mt120 { margin-top: 120px; }
+
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.mb25 { margin-bottom: 25px; }
+.mb30 { margin-bottom: 30px; }
+.mb50 { margin-bottom: 50px; }
+.mb80 { margin-bottom: 80px; }
+
+.padh30 { padding: 30px 0; }
+.padh50 { padding: 50px 0; }
+.padh80 { padding: 80px 0; }
+.padh100 { padding: 100px 0; }
+
+.fs80 { font-size: 80%; }
+.fs90 { font-size: 90%; }
+.fs110 { font-size: 110%; }
+.fs120 { font-size: 120%; }
+.fs130 { font-size: 130%; }
+.fs140 { font-size: 140%; }
+.fs150 { font-size: 150%; }
+.fs160 { font-size: 160%; }
+.fs170 { font-size: 170%; }
+.fs180 { font-size: 180%; }
+.fs200 { font-size: 200%; }
+
+} /* --- /pc --- */
+
+/* ------- spSite　----------------------------------- */
+@media screen and (max-width:767px) { /* スマホ */
+.mt10, .mt15 { margin-top: 10px; }
+.mt20, .mt25 { margin-top: 15px; }
+.mt30, .mt40 { margin-top: 20px; }
+.mt50, .mt60 { margin-top: 30px; }
+.mt70, .mt80 { margin-top: 40px; }
+.mt90, .mt100 { margin-top: 50px; }
+.mt120 { margin-top: 60px; }
+
+.mb10, .mb15 { margin-bottom: 10px; }
+.mb20, .mb25 { margin-bottom: 15px; }
+.mb30 { margin-bottom: 20px; }
+.mb50 { margin-bottom: 30px; }
+.mb80 { margin-bottom: 50px; }
+
+.padh30 { padding: 15px 0; }
+.padh50 { padding: 30px 0; }
+.padh80 { padding: 40px 0; }
+.padh100 { padding: 50px 0; }
+
+.fs80, .fs90 { font-size: 90%; }
+.fs110 { font-size: 105%; }
+.fs120, .fs130 { font-size: 120%; }
+.fs140, .fs150 { font-size: 130%; }
+.fs160, .fs170 { font-size: 150%; }
+.fs180, .fs200 { font-size: 160%; }
+
+} /* --- /sp --- */
