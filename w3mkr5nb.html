@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no">
+<!-- <title>Front-end Engineer A</title>
+<meta name="description" content="Front-end Engineer A のポートフォリオサイトです。">
+<meta name="keywords" content="フロントエンド,エンジニア,コーダー,WEBデザイナー"> -->
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="css/style.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	var topBtn = $('.pagetop');
+	topBtn.hide();
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 200) {
+			topBtn.fadeIn();
+		} else {
+			topBtn.fadeOut();
+		}
+	});
+	topBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 1000);
+		return false;
+	});
+	// #で始まるアンカーをクリックした場合に処理
+	$('a[href^=#]').click(function() {
+	// スクロールの速度
+		var speed = 400; // ミリ秒
+		// アンカーの値取得
+		var href= $(this).attr("href");
+		// 移動先を取得
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		// 移動先を数値で取得
+		var position = target.offset().top;
+		// スムーススクロール
+		$('body,html').animate({scrollTop:position}, speed, 'swing');
+		return false;
+	});
+});
+</script>
+
+<!-- スクロールアニメーション -->
+<script>
+$(function(){
+$(window).scroll(function (){
+	//フェードイン
+	$('.fadein').each(function(){
+		var elemPos = $(this).offset().top;
+		var scroll = $(window).scrollTop();
+		var windowHeight = $(window).height();
+		if (scroll > elemPos - windowHeight + 50){
+			$(this).addClass('scrollin');
+		}
+	});
+});
+});
+</script>
+
+<!-- spNavi -->
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- WEBフォント -->
+<link rel="stylesheet" href="https://use.typekit.net/juf2bkd.css">
+
+</head>
+<body>
+
+<header>
+	<!-- Navi -->
+	<div class="btn_wrapper clearfix">
+		<div class="menu_btn">
+			<div class="line" style="background-color:#000;"></div>
+			<div class="line" style="background-color:#000;"></div>
+			<div class="line" style="background-color:#000;"></div>
+		</div>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="#"><span class="eng fs160">TOP</span>　ページトップ</a></li>
+			<li><a href="#profile"><span class="eng fs160">Profile</span>　自己紹介</a></li>
+			<li><a href="#history"><span class="eng fs160">History</span>　経歴</a></li>
+			<li><a href="#skill"><span class="eng fs160">Skill</span>　スキル</a></li>
+			<li><a href="#responsive"><span class="eng fs160">Responsive</span>　レスポンシブ</a></li>
+		</ul>
+		<div class="menu_overlay"></div>
+	</nav>
+</header>
+<article>
+
+<!-- hTitle -->
+<section class="bg01 padh50">
+	<div class="case w03">
+		<h3>Works</h3>
+		<h5>制作実績</h5>
+	</div>
+</section>
+
+<!-- mainContents -->
+<section class="box padh80">
+	<div class="case w03">
+		<p class="tac">
+			幅広いジャンルのWEBサイト・ランディングページ（LP）を制作しています。<br>
+			下記は今まで制作したサイトの一部です。<br>
+			年間制作数は 2023年：約50件、2022年：約40件です。<br>
+		</p>
+
+		<h4 class="tal fwb mt80">企業</h4>
+		<ul class="list01 mt20">
+			<li>キオクシア岩手 高卒採用サイト：<a target="_blank" href="https://www.kioxia-iwate.co.jp/recruit/highschool/">https://www.kioxia-iwate.co.jp/recruit/highschool/</a></li>
+			<li>タカヤ不動産：<a target="_blank" href="https://takaya-net.jp/">https://takaya-net.jp/</a></li>
+			<li>さわや書店：<a target="_blank" href="http://books-sawaya.co.jp/">http://books-sawaya.co.jp/</a></li>
+			<li>菅重建設：<a target="_blank" href="https://sugajyu.com/">https://sugajyu.com/</a></li>
+			<li>日重建設：<a target="_blank" href="https://www.jmce.co.jp/">https://www.jmce.co.jp/</a></li>
+			<li>ジョイホーム：<a target="_blank" href="https://my-joyhome.jp/">https://my-joyhome.jp/</a></li>
+			<li>たかしん興業：<a target="_blank" href="https://takashin-iwate.com/">https://takashin-iwate.com/</a></li>
+			<li>ViTO×IWAIZUMI：<a target="_blank" href="https://vito.iwaizumilk.co.jp">https://vito.iwaizumilk.co.jp</a></li>
+			<li>盛岡市こども科学館：<a target="_blank" href="https://kodomokagakukan.com/">https://kodomokagakukan.com/</a></li>
+		</ul>
+
+		<h4 class="tal fwb mt80">イベント</h4>
+		<ul class="list01 mt20">
+			<li>大沢温泉 ジブリ展：<a target="_blank" href="https://multi-info.link/oosawaonsen-ghibli/">https://multi-info.link/oosawaonsen-ghibli/</a></li>
+			<li>日本スポーツマスターズ2022 岩手大会実行委員会：（公式LINEアカウントを運営）</li>
+			<li>インプレクサス・アートギャラリー：<a target="_blank" href="https://implexus.jp/">https://implexus.jp/</a></li>
+		</ul>
+
+		<h4 class="tal fwb mt80">交通</h4>
+		<ul class="list01 mt20">
+			<li>盛岡バスセンター：<a target="_blank" href="https://morioka-buscenter.jp/">https://morioka-buscenter.jp/</a></li>
+			<li>JR東日本 夏の臨時列車2021：<a target="_blank" href="https://www.jreast.co.jp/morioka/resshatabi/">https://www.jreast.co.jp/morioka/resshatabi/</a></li>
+			<li>岩手県北バス（三陸高速バスLP）：<a target="_blank" href="http://www.iwate-kenpokubus.co.jp/myk-sdj/">http://www.iwate-kenpokubus.co.jp/myk-sdj/</a></li>
+		</ul>
+
+		<h4 class="tal fwb mt80">医療</h4>
+		<ul class="list01 mt20">
+			<li>岩手西北医師会：<a target="_blank" href="https://iwate-seihoku.jp/">https://iwate-seihoku.jp/</a></li>
+			<li>みやもと内科クリニック：<a target="_blank" href="https://www.miyamoto-naika.net/">https://www.miyamoto-naika.net/</a></li>
+			<li>牧野林デンタルクリニック：<a target="_blank" href="https://makinobayashidc.jp/">https://makinobayashidc.jp/</a></li>
+		</ul>
+
+		<h4 class="tal fwb mt80">学校</h4>
+		<ul class="list01 mt20">
+			<li>WASEDA理工パートナーズ：<a target="_blank" href="https://www.waseda.jp/partners/">https://www.waseda.jp/partners/</a></li>
+			<li>岩手県立大学 ソフトウェア情報学部：<a target="_blank" href="https://www.soft.iwate-pu.ac.jp/">https://www.soft.iwate-pu.ac.jp/</a></li>
+			<li>八戸保健医療専門学校：<a target="_blank" href="https://hachi-iryo.jp/">https://hachi-iryo.jp/</a></li>
+		</ul>
+
+		<h4 class="tal fwb mt80">行政・地域事業</h4>
+		<ul class="list01 mt20">
+			<li>遠野市観光協会 多言語サイト：<a target="_blank" href="https://tonojikan.jp/ml/">https://tonojikan.jp/ml/</a></li>
+			<li>岩泉町観光協会：<a target="_blank" href="https://iwaizumi-kankou.jp/">https://iwaizumi-kankou.jp/</a></li>
+			<li>盛岡という星で（シティプロモーション）：<a target="_blank" href="https://planetmorioka.jp/">https://planetmorioka.jp/</a></li>
+		</ul>
+
+		<h4 class="tal fwb mt80">組合・団体</h4>
+		<ul class="list01 mt20">
+			<li>岩手県内水面漁業協同組合連合会：<a target="_blank" href="https://www.iwate-naisuimen.jp/">https://www.iwate-naisuimen.jp/</a></li>
+			<li>岩手県公共嘱託登記土地家屋調査士協会：<a target="_blank" href="https://www.ick.or.jp/">https://www.ick.or.jp/</a></li>
+			<li>日本港湾タグ事業協会：<a target="_blank" href="http://www.japantug.or.jp/">http://www.japantug.or.jp/</a></li>
+		</ul>
+
+		<h4 class="tal fwb mt80">個人サイト</h4>
+		<ul class="list01 mt20">
+			<li>衆議院議員 藤原たかし：<a target="_blank" href="https://takasi.info/">https://takasi.info/</a></li>
+			<li>岩手県議会議員 川村しんこう：<a target="_blank" href="http://shinko-kawamura.iwate.jp/">http://shinko-kawamura.iwate.jp/</a></li>
+			<li>カメラマン 千葉菜穂子：<a target="_blank" href="https://photo-chibanaoko.com/">https://photo-chibanaoko.com/</a></li>
+		</ul>
+
+		<p class="mt50">他多数</p>
+	</div>
+</section>
+
+<!-- footer -->
+</article>
+<footer>
+	<div class="case">
+		<p class="fs80 tac mt15">© Front-end Engineer A</p>
+	</div>
+	<div class="pagetop"><a href="#"><img src="images/common/pagetop.png" alt="ページトップへ"></a></div>
+</footer>
+
+</body>
+</html>
